@@ -1,8 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Алима Троицкая](https://up.htmlacademy.ru/htmlcss/19/user/250829).
-* Наставник: [Юлия Антонова] 
-(https://htmlacademy.ru/profile/id39082).
+* Наставник: [Юлия Антонова](https://htmlacademy.ru/profile/id39082).
 
 ---
 
