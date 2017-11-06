@@ -24,91 +24,102 @@
 
       <main>
 
+        <h1 class="visually-hidden">Выбор отеля</h1>
+
         <section class="filters">
+          <h2 class="visually-hidden">Фильтры</h2>
           <!-- Здесь будет форма -->
         </section>
 
         <section class="sorting">
-          <b>Найдено: 3</b>
+          <h2 class="visually-hidden">Сортировка</h2>
+          <b>Найдено: <span class="quantity">3</span></b>
           <div class="sorting-type">
             <p>Сортировка:</p>
             <ul>
               <li>
-                <a class="button" href="#">По цене</a>
+                <a class="sorting-link" href="#">По цене</a>
               </li>
               <li>
-                  <a class="button" href="#">По типу</a>
+                <a class="sorting-link" href="#">По типу</a>
               </li>
               <li>
-                  <a class="button" href="#">По рейтенгу</a>
+                <a class="sorting-link" href="#">По рейтенгу</a>
               </li>
             </ul>
           </div>
           <ul>
             <li>
-                <a class="button" href="#"><img src="#" width="#" height="#" alt="Треугольник вверх"></a>
+              <a class="arrow-up" href="#"></a>
             </li>
             <li>
-                <a class="button" href="#"><img src="#" width="#" height="#" alt="Треугольник вниз"></a>
+              <a class="arrow-down" href="#"></a>
             </li>
           </ul>
         </section>
 
         <section class="catalog">
+          <h2 class="visually-hidden">Каталог</h2>
           <ul class="catalog-list">
             <li class="catalog-item">
-              <p class="catalog-item-image">
+              <div class="catalog-item-image">
                 <img src="#" width="#" height="#" alt="Фото Amara resort & SPA">
-              </p>
+              </div>
               <h3><a href="catalog-item.html">Amara resort & SPA</a></h3>
               <p class="catalog-item-type">
                 <span>Гостиница</span>
-                <a class="button" href="#">Подробнее</a>
+                <a class="button more-info" href="#">Подробнее</a>
               </p>
               <p class="catalog-item-price">
                 <span>От 3500 р.</span>
                 <a class="button" href="#">Забронировать</a>
               <p>
-              <span class="rating">Рейтинг: 8,5</span>
-              <p class="stars">
-                <img src="#" width="#" height="#" alt="Изображение пяти звезд">
-              </p>
+              <div class="stars-and-rating">
+                <div class="stars">
+                  <img src="#" width="#" height="#" alt="Изображение пяти звезд">
+                </div>
+                <span class="rating">Рейтинг: 8,5</span>
+              </div>
             </li>
             <li class="catalog-item">
-                <p class="catalog-item-image">
+                <div class="catalog-item-image">
                   <img src="#" width="#" height="#" alt=" Фото Desert quali inn">
-                </p>
+                </div>
                 <h3><a href="catalog-item.html">Desert quali inn</a></h3>
                 <p class="catalog-item-type">
                   <span>Мотель</span>
-                  <a class="button" href="#">Подробнее</a>
+                  <a class="button more-info" href="#">Подробнее</a>
                 </p>
                 <p class="catalog-item-price">
                   <span>От 2000 р.</span>
                   <a class="button">Забронировать</a>
                 <p>
-                <span class="rating">Рейтинг: 8,9</span>
-                <p class="stars">
-                  <img src="#" width="#" height="#" alt="Изображение двух звезд">
-                </p>
+                <div class="stars-and-rating">
+                  <div class="stars">
+                    <img src="#" width="#" height="#" alt="Изображение двух звезд">
+                  </div>
+                  <span class="rating">Рейтинг: 8,9</span>
+                </div>
               </li>
               <li class="catalog-item">
-                  <p class="catalog-item-image">
+                  <div class="catalog-item-image">
                     <img src="#" width="#" height="#" alt=" Фото Villas at poco diablo">
-                  </p>
+                  </div>
                   <h3><a href="catalog-item.html">Villas at poco diablo</a></h3>
                   <p class="catalog-item-type">
                     <span>Апартаменты</span>
-                    <a class="button">Подробнее</a>
+                    <a class="button more-info">Подробнее</a>
                   </p>
                   <p class="catalog-item-price">
                     <span>От 4000 р.</span>
                     <a class="button">Забронировать</a>
                   <p>
-                  <span class="rating">Рейтинг: 9,2</span>
-                  <p class="stars">
-                    <img src="#" width="#" height="#" alt="Изображение трех звезд">
-                  </p>
+                  <div class="stars-and-rating">
+                    <div class="stars">
+                      <img src="#" width="#" height="#" alt="Изображение трех звезд">
+                      <span class="rating">Рейтинг: 9,2</span>
+                    </div>
+                  </div>
                 </li>
           </ul>
         </section>
