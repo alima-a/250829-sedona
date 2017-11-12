@@ -28,7 +28,48 @@
 
         <section class="filters">
           <h2 class="visually-hidden">Фильтры</h2>
-          <!-- Здесь будет форма -->
+          <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+            <fieldset>
+              <legend>Инфраструктура:</legend>
+              <ul>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" checked>
+                  <label for="pool">Бассейн</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking">
+                  <label for="parking">Парковка</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-fi">
+                  <label for="wi-fi">wi-fi</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Тип жилья:</legend>
+              <ul>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" checked>
+                  <label for="hotel">Гостиница</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" checked>
+                  <label for="motel">Мотель</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" checked>
+                  <label for="apartments">Апартаменты</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Стоимость жилья в сутки (р):</legend>
+              <p>От 0 до 3000</p>
+              <input type="range" name="price"> <br>
+              <button class="button show-button" type="button">Показать</button>
+            </fieldset>
+          </form>
         </section>
 
         <section class="sorting">
@@ -95,7 +136,7 @@
                 </p>
                 <p class="catalog-item-price">
                   <span>От 2000 р.</span>
-                  <a class="button">Забронировать</a>
+                  <a class="button" href="#">Забронировать</a>
                 <p>
                 <div class="stars-and-rating">
                   <div class="stars">
@@ -116,7 +157,7 @@
                   </p>
                   <p class="catalog-item-price">
                     <span>От 4000 р.</span>
-                    <a class="button">Забронировать</a>
+                    <a class="button" href="#">Забронировать</a>
                   <p>
                   <div class="stars-and-rating">
                     <div class="stars">

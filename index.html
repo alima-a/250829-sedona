@@ -88,7 +88,21 @@
         <section class="search">
           <h3>Заинтересовались?</h3>
           <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие приглашения гостиниц в Седоне</p>
-          <!-- Здесь будет форма -->
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset>
+              <legend>Поиск гостиницы в Седоне</legend>
+              <p class="arrival-item">
+                <label for="arrival-date">Дата заезда</label>
+                <input id="arrival-date" type="text" name="date" value="" placeholder="24 апреля 2017">
+              </p>
+              <p class="departure-item">
+                <label for="departure-date">Дата заезда</label>
+                <input id="departure-date" type="text" name="date" value="" placeholder="4 июля 2017">
+              </p>
+              <!--Спаситепомогите, а как это вообще делается? Я что-то не могу сообразить.-->
+              <button class="button" type="submit">Найти</button>
+            </fieldset>
+          </form>
         </section>
 
         <section class="map">
