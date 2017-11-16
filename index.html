@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
@@ -10,7 +13,7 @@
 
       <header class="main-header">
         <nav class="main-navigation">
-          <a class="main-header-logo">
+          <a class="main-header-logo" href="index.html">
             <img src="img/index-logo.png" width="138" height="70" alt="Лого City of Sedona">
           </a>
           <ul class="site-navigation">
@@ -91,15 +94,16 @@
         <section class="search">
           <h3>Заинтересовались?</h3>
           <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие приглашения гостиниц в Седоне</p>
+          <a class="search-hotel" href="#">Поиск гостиницы в Седоне</a>
           <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
             <fieldset>
-              <legend>Поиск гостиницы в Седоне</legend>
-              <p class="arrival-item">
+              <legend class="visually-hidden">Поиск гостиницы в Седоне</legend>
+              <p class="date arrival-item">
                 <label for="arrival-date">Дата заезда</label>
                 <input id="arrival-date" type="text" name="date" value="" placeholder="24 апреля 2017">
                 <a class="calendar" href="#"><span class="visually-hidden">Календарь</span></a>
               </p>
-              <p class="departure-item">
+              <p class="date departure-item">
                 <label for="departure-date">Дата заезда</label>
                 <input id="departure-date" type="text" name="date" value="" placeholder="4 июля 2017">
                 <a class="calendar" href="#"><span class="visually-hidden">Календарь</span></a>
@@ -116,7 +120,7 @@
                 <input id="children" type="text" name="children" value="" placeholder="0">
                 <button type="button" class="minus-button"><span class="visually-hidden">Минус</span></button>
               </p>
-              <button class="button" type="submit">Найти</button>
+              <button class="button search-button" type="submit">Найти</button>
             </fieldset>
           </form>
         </section>

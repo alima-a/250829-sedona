@@ -1,0 +1,298 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Tahoma, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: #fff;
+}
+
+.visually-hidden {
+  visibility: hidden;
+}
+
+.main-header {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.main-header ul{
+  list-style-type: none;
+}
+
+.main-header a {
+  color: #333;
+  text-decoration: none;
+}
+
+.main-header a:hover {
+  color: #81b3d2;
+  text-decoration: none;
+}
+
+.main-header a:active {
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+
+.intro {
+  background-color: #a96b60;
+  background-image: url("../img/background.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.tagline {
+  line-height: 26px;
+}
+
+.tagline h3 {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.place {
+  color: #fff;
+
+  background-color: #81b3d2;
+}
+
+.place h3 {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.services h3 {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.services ul{
+  list-style-type: none;
+}
+
+.advantages {
+  background-color: #eee;
+}
+
+.advantages h3 {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.advantages ul{
+  list-style-type: none;
+}
+
+.search h3 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+.search-hotel {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+
+  background-color: #766357;
+}
+
+.search-hotel:hover {
+  background-color: #604e43;
+}
+
+.search-hotel:active {
+  color: rgba(255,255,255,0.3);
+
+  background-color: #604e43;
+}
+
+.search-form {
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.date input {
+  background-color: #f2f2f2;
+}
+
+.date input:hover {
+  background-color: #ebebeb;
+}
+
+.date input:focus {
+  background-color: #fff;
+}
+
+.search-button {
+  color: #fff;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+
+  background-color: #81b3d2;
+  border: none;
+}
+
+.search-button:hover {
+  background-color: #669ec0;
+}
+
+.search-button:active {
+  color: rgba(255,255,255,0.3)
+
+  background-color: #5496bd;
+}
+
+.main-footer {
+  background-color: rgba(255,255,255,0.9);
+}
+
+.main-footer ul {
+  list-style-type: none;
+}
+
+.hashtag a{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.filters {
+  font-size: 14px;
+  line-height: 21px;
+  color: #fff;
+
+  background-color: #7d9ebf;
+  background-image: url("../img/background-catalog.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.filters ul {
+  list-style-type: none;
+}
+
+.filters legend {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+.sorting {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sorting b {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.sorting ul {
+  list-style-type: none;
+}
+
+.sorting-link {
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.sorting-link:hover {
+  color: #81b3d2;
+  text-decoration: none;
+}
+
+.sorting-link:active {
+  color: #81b3d2;
+  text-decoration: none;
+
+  border-bottom:none;
+}
+
+.catalog ul {
+  list-style-type: none;
+}
+
+.catalog a {
+  text-decoration: none;
+}
+
+.catalog:last-child {
+  border-bottom: solid 1px #e5e5e5;
+}
+
+.catalog-item {
+  border-top: solid 1px #e5e5e5;
+}
+
+.catalog-name a {
+  color: #333;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.catalog-name a:hover {
+  color: #81b3d2;
+}
+
+.catalog-name a:active {
+  color: #b2b2b2;
+}
+
+.more-info {
+  color: #fff;
+  font-weight: bold;
+
+  background-color: #81b3d2;
+}
+
+.more-info:hover {
+  background-color: #669ec0;
+}
+
+.more-info:active {
+  color: rgba(255,255,255,0.3);
+
+  background-color: #5496bd;}
+
+.booking {
+  color: #fff;
+  font-weight: bold;
+
+  background-color: #766357;
+}
+
+.booking:hover {
+  background-color: #604e43;
+}
+
+.booking:active {
+  color: rgba(255,255,255,0.3);
+
+  background-color: #503e33;
+}
+
+.rating {
+  color: #666;
+
+  background-color: #f2f2f2;
+}
