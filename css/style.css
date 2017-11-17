@@ -44,7 +44,7 @@ body {
 
 .intro {
   background-color: #a96b60;
-  background-image: url("../img/background.jpg");
+  background-image: url("../img/background-main.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -150,7 +150,7 @@ body {
 }
 
 .search-button:active {
-  color: rgba(255,255,255,0.3)
+  color: rgba(255,255,255,0.3);
 
   background-color: #5496bd;
 }
@@ -177,7 +177,7 @@ body {
   color: #fff;
 
   background-color: #7d9ebf;
-  background-image: url("../img/background-catalog.jpg");
+  background-image: url("../img/background-blur.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 100%;
