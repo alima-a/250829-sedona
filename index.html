@@ -35,20 +35,18 @@
         </section>
 
         <section class="tagline">
-          <div class="tagline-text">
-            <h2>Седона - небольшой городок в Аризоне, <br> заслуживающий большего!</h2>
+            <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
             <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-          </div>
         </section>
 
         <section class="place">
           <div class="place-text">
-            <h3>Настоящий городок</h3>
-            <span>-№1-</span>
-            <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+              <h3>Настоящий городок</h3>
+              <span>-№1-</span>
+              <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <img src="img/sedona-photo.jpg" width="1600" height="800" alt="Фотография города">
-        </section>
+          <div class="place-img"></div>
+                 </section>
 
         <section class="services">
           <ul class="services-list">
@@ -71,12 +69,12 @@
         </section>
 
         <section class="place bridge">
-          <div class="place-text">
-            <h3>Там есть мост Дьявола</h3>
-            <span>-№2-</span>
-            <p>Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
+          <div class="place-text bridge-text">
+              <h3>Там есть мост Дьявола</h3>
+              <span>-№2-</span>
+              <p>Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
           </div>
-          <img src="img/bridge-photo.jpg" width="1600" height="800" alt="Фотография моста">
+          <div class="bridge-img"></div>
         </section>
 
         <section class="advantages">
@@ -102,46 +100,48 @@
         <section class="search">
           <div class="search-text">
             <h3>Заинтересовались?</h3>
-            <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие приглашения гостиниц в Седоне</p>
+            <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие приглашения гостиниц в Седоне</p>
           </div>
-          <a class="search-hotel" href="#">Поиск гостиницы в Седоне</a>
-          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset>
-              <legend class="visually-hidden">Поиск гостиницы в Седоне</legend>
-              <p class="date arrival-item">
-                <label for="arrival-date">Дата заезда</label>
-                <input id="arrival-date" type="text" name="date" value="" placeholder="24 апреля 2017">
-                <a class="calendar" href="#"><span class="visually-hidden">Календарь</span></a>
-              </p>
-              <p class="date departure-item">
-                <label for="departure-date">Дата заезда</label>
-                <input id="departure-date" type="text" name="date" value="" placeholder="4 июля 2017">
-                <a class="calendar" href="#"><span class="visually-hidden">Календарь</span></a>
-              </p>
-              <p class="adults-item">
-                <label for="adults">Взрослые</label>
-                <button type="button" class="plus-button"><span class="visually-hidden">Плюс</span></button>
-                <input id="adults" type="text" name="adults" value="" placeholder="2">
-                <button type="button" class="minus-button"><span class="visually-hidden">Минус</span></button>
-              </p>
-              <p class="children-item">
-                <label for="children">Дети</label>
-                <button type="button" class="plus-button"><span class="visually-hidden">Плюс</span></button>
-                <input id="children" type="text" name="children" value="" placeholder="0">
-                <button type="button" class="minus-button"><span class="visually-hidden">Минус</span></button>
-              </p>
-              <button class="button search-button" type="submit">Найти</button>
-            </fieldset>
-          </form>
+          <div class="search-form-wrapper">
+            <a class="search-hotel" href="#">Поиск гостиницы в Седоне</a>
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+              <fieldset>
+                <legend class="visually-hidden">Поиск гостиницы в Седоне</legend>
+                <p class="date arrival-item">
+                  <label for="arrival-date">Дата заезда</label>
+                  <input id="arrival-date" type="text" name="date" value="" placeholder="24 апреля 2017">
+                  <a class="calendar" href="#"><span class="visually-hidden">Календарь</span></a>
+                </p>
+                <p class="date departure-item">
+                  <label for="departure-date">Дата заезда</label>
+                  <input id="departure-date" type="text" name="date" value="" placeholder="4 июля 2017">
+                  <a class="calendar" href="#"><span class="visually-hidden">Календарь</span></a>
+                </p>
+                <p class="adults-item">
+                  <label for="adults">Взрослые</label>
+                  <button type="button" class="plus-button"><span class="visually-hidden">Плюс</span></button>
+                  <input id="adults" type="text" name="adults" value="" placeholder="2">
+                  <button type="button" class="minus-button"><span class="visually-hidden">Минус</span></button>
+                </p>
+                <p class="children-item">
+                  <label for="children">Дети</label>
+                  <button type="button" class="plus-button"><span class="visually-hidden">Плюс</span></button>
+                  <input id="children" type="text" name="children" value="" placeholder="0">
+                  <button type="button" class="minus-button"><span class="visually-hidden">Минус</span></button>
+                </p>
+                <button class="button search-button" type="submit">Найти</button>
+              </fieldset>
+            </form>
+          </div>
         </section>
 
         <section class="map">
-          <img src="img/map.jpg" width="1280" height="747" alt="Изображение карты">
+          <div class="map-img"></div>
         </section>
 
       </main>
 
-      <footer class="main-footer">
+      <footer class="main-footer index-footer">
         <p class="hashtag">
           <a href="#">#visitsedona</a>
         </p>
