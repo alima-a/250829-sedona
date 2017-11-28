@@ -139,8 +139,7 @@ body {
 
 .tagline p {
   margin: 0 auto;
-  margin-top: 36px;
-  padding: 0 20px;
+    padding: 33px 20px 0 20px;
 }
 
 .place {
@@ -157,7 +156,7 @@ body {
 
 .place-text {
   margin: 0;
-  padding: 0;
+  padding: 45px 0 0;
   width: 33.33%;
 }
 
@@ -167,13 +166,16 @@ body {
 }
 
 .place h3 {
-  margin: 45px auto 27px auto;
   width: 200px;
+  padding-bottom: 26px;
+
+  font-size: 21px;
+  font-weight: bold;
 }
 
 .place-text p {
   margin: 0 auto;
-  margin-top: 30px;
+  padding-top: 27px;
   width: 300px;
 }
 
@@ -188,14 +190,8 @@ body {
   background-size: cover;
 }
 
-.place h3 {
-  font-size: 21px;
-  font-weight: bold;
-}
-
 .services {
   padding: 0;
-  min-height: 330px;
 }
 .services-list {
   display: flex;
@@ -210,7 +206,8 @@ body {
   flex-direction: column;
   justify-content: center;
   margin: 0;
-  padding: 0;
+  padding:0;
+  min-height: 330px;
 }
 
 .services h3, p {
@@ -219,14 +216,14 @@ body {
 }
 
 .services h3 {
-  margin-top: 32px;
-  /*маргин выбран с учетом того, что атм еще изображение будет*/
+  padding-top: 28px;
+  /*маргин выбран с учетом того, что там еще изображение будет*/
   font-size: 21px;
   font-weight: bold;
 }
 
 .service-item p {
-  margin-top: 30px;
+  padding-top: 24px;
   width: 300px;
 }
 
@@ -249,7 +246,6 @@ body {
 
 .advantages {
   padding: 0;
-  height: 256px;
 
   background-color: #eee;
 }
@@ -260,19 +256,20 @@ body {
   flex-basis: 33.33%;
   margin: 0;
   padding: 0;
+  min-height: 256px;
 }
 
 .advantages h3 {
-  margin: 48px 0 27px 0;
-  padding: 0;
+  margin:0 auto;
+  padding: 47px 0 26px;
 
   font-size: 21px;
   font-weight: bold;
 }
 
 .advantages p {
-  margin: 29px auto 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 25px 0 0;
   width: 270px;
 }
 
@@ -290,7 +287,8 @@ body {
 }
 
 .search-text h3 {
-  margin: 55px auto 35px;
+  margin: 0 auto;
+  padding-top: 55px;
 
   font-size: 30px;
   line-height: 36px;
@@ -299,6 +297,7 @@ body {
 
 .search-text p {
   margin: 0 auto;
+  padding-top: 33px;
   width: 450px;
   /*вот как тут распределить текст верно?*/
   line-height: 24px;
@@ -307,23 +306,37 @@ body {
 .search-text {
   display: flex;
   flex-direction: column;
-  height: 292px;
+  margin-bottom: 50px;
 }
 
 .search-form-wrapper {
   /*кнопка почему-тов все равно выпадает из обертки :((( */
   display: block;
-  position: absolute;
-  height: 481px;
+  position: relative;
+  margin: 0 auto;
   width: 568px;
-  left: 50%;
-  transform: translateX(-50%);
 
   background-color: #fff;
 }
 
 .search-form {
-  margin: 86px 0 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 55px;
+  box-sizing: border-box;
+
+  line-height: 26px;
+  font-weight: bold;
+
+  background-color: #fff;
+}
+
+.search-form fieldset {
+  border: none;
+  margin: 0;
   padding: 0;
 }
 
@@ -343,8 +356,7 @@ body {
 }
 
 .search-hotel {
-  width: 100%;
-  height: 58px;
+  display: block;
 
   font-size: 21px;
   line-height: 26px;
@@ -364,15 +376,6 @@ body {
   background-color: #604e43;
 }
 
-.search-form {
-  line-height: 26px;
-  font-weight: bold;
-}
-
-.search-form fieldset {
-	border: none;
-}
-
 .date input {
   background-color: #f2f2f2;
 }
@@ -386,13 +389,14 @@ body {
 }
 
 .search-button {
+  width: 100%;
   color: #fff;
   font-size: 21px;
   line-height: 26px;
 
   background-color: #81b3d2;
   border: none;
-  padding: 17px 199px 22px 196px;
+  padding: 16px 20px;
 }
 
 .search-button:hover {
@@ -410,22 +414,27 @@ body {
   background-size: cover;
 }
 
-.main-footer-wapper {
-  position: absolute;
-}
-
-
 .main-footer {
   display: flex;
-  justify-content: space-around;
-  height: 120px;
+  width: 100%;
 
   background-color: rgba(255,255,255,0.9);
+}
+
+.footer-index {
+  position: absolute;
+  bottom: 0;
 }
 
 .main-footer ul {
   display: flex;
   list-style-type: none;
+}
+
+.hashtag {
+  width: 33.33%;
+  margin: 0;
+  align-self: center;
 }
 
 .hashtag a{
@@ -436,9 +445,28 @@ body {
   text-decoration: none;
 }
 
+.footer-social {
+  display: flex;
+  justify-content: center;
+  width: 33.33%;
+  margin: 0;
+  padding: 36px 0;
+
+}
+
+.footer-copyright {
+  width: 33.33%;
+  margin: 0;
+  align-self: center;
+}
+
+/*СТРАНИЧКА С ОТЕЛЯМИ*/
+
 .filters {
   display: flex;
   min-height: 217px;
+  padding: 0;
+  margin: 0;
 
   font-size: 14px;
   line-height: 21px;
@@ -453,6 +481,8 @@ body {
 
 .filters ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .filters legend {
@@ -463,17 +493,40 @@ body {
 
 .filter {
   display: flex;
+  width: 100%;
   flex-direction: row;
-  justify-content: space-around;
 }
 
 .filter fieldset {
+  margin: 0;
+  padding: 0;
   border: none;
+
+  text-align: left;
+}
+
+.filter-inf {
+  width: 27.25%;
+  padding: 73px 0 0;
+  margin: 0;
+}
+
+.filter-type {
+  width: 40.333%;
+  padding: 0;
+  margin: 0;
+}
+
+.filter-option {
+  text-align: left;
 }
 
 .price-range {
   display: flex;
   flex-direction: column;
+  width: 28.283%;
+  padding: 0;
+  margin: 0;
 }
 
 .show-button {
@@ -497,31 +550,47 @@ body {
 
 .sorting {
   display: flex;
-  justify-content: space-around;
   min-height: 86px;
   align-items: center;
+  padding: 0 0 0 43px;
+  margin: 0;
 
   font-size: 12px;
   line-height: 18px;
 }
 
 .sorting b {
-  font-size: 21px;
+   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
 }
 
 .sorting ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .sorting-type {
   display: flex;
 }
 
+.sorting-type p{
+  padding-left: 50px;
+}
+
 .sorting-type ul {
   display: flex;
+  padding: 0;
+  margin: 0;
+}
 
+.sorting-type li:first-child {
+  padding: 0 33px 0 33px;
+}
+
+.sorting-type li:nth-child(2) {
+  padding-right: 33px;
 }
 
 .sorting-link {
@@ -545,6 +614,8 @@ body {
 
 .catalog ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .catalog a {
@@ -559,8 +630,19 @@ body {
   display: flex;
   min-height: 152px;
   padding-top: 30px;
+  padding-left: 72px;
 
   border-top: solid 1px #e5e5e5;
+}
+
+.catalog-item p {
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-name {
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-name a {
