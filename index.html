@@ -105,30 +105,32 @@
           <div class="search-form-wrapper">
             <a class="search-hotel" href="#">Поиск гостиницы в Седоне</a>
             <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-              <fieldset>
+              <fieldset class="search-form-inside">
                 <legend class="visually-hidden">Поиск гостиницы в Седоне</legend>
                 <p class="date arrival-item">
-                  <label for="arrival-date">Дата заезда</label>
+                  <label for="arrival-date">Дата заезда:</label>
                   <input id="arrival-date" type="text" name="date" value="" placeholder="24 апреля 2017">
                   <a class="calendar" href="#"><span class="visually-hidden">Календарь</span></a>
                 </p>
                 <p class="date departure-item">
-                  <label for="departure-date">Дата заезда</label>
+                  <label for="departure-date">Дата выезда:</label>
                   <input id="departure-date" type="text" name="date" value="" placeholder="4 июля 2017">
                   <a class="calendar" href="#"><span class="visually-hidden">Календарь</span></a>
                 </p>
-                <p class="adults-item">
-                  <label for="adults">Взрослые</label>
-                  <button type="button" class="plus-button"><span class="visually-hidden">Плюс</span></button>
-                  <input id="adults" type="text" name="adults" value="" placeholder="2">
-                  <button type="button" class="minus-button"><span class="visually-hidden">Минус</span></button>
-                </p>
-                <p class="children-item">
-                  <label for="children">Дети</label>
-                  <button type="button" class="plus-button"><span class="visually-hidden">Плюс</span></button>
-                  <input id="children" type="text" name="children" value="" placeholder="0">
-                  <button type="button" class="minus-button"><span class="visually-hidden">Минус</span></button>
-                </p>
+                <div class="guests">
+                  <p class="guests-item">
+                    <label for="adults">Взрослые</label>
+                    <button type="button" class="plus-button"><span class="visually-hidden">Плюс</span></button>
+                    <input id="adults" type="text" name="adults" value="" placeholder="2">
+                    <button type="button" class="minus-button"><span class="visually-hidden">Минус</span></button>
+                  </p>
+                  <p class="guests-item">
+                    <label for="children">Дети</label>
+                    <button type="button" class="plus-button"><span class="visually-hidden">Плюс</span></button>
+                    <input id="children" type="text" name="children" value="" placeholder="0">
+                    <button type="button" class="minus-button"><span class="visually-hidden">Минус</span></button>
+                  </p>
+                </div>
                 <button class="button search-button" type="submit">Найти</button>
               </fieldset>
             </form>
@@ -147,9 +149,9 @@
         </p>
         <div class="footer-social">
           <ul>
-            <li><a class="social-button" href="#">Твиттер</a></li>
-            <li><a class="social-button" href="#">Фейсбук</a></li>
-            <li><a class="social-button" href="#">Ютуб</a></li>
+            <li><a class="social social-twitter" href="#"></a></li>
+            <li><a class="social social-fb" href="#"></a></li>
+            <li><a class="social social-youtube" href="#"></a></li>
           </ul>
         </div>
         <p class="footer-copyright"> website by

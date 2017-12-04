@@ -191,6 +191,24 @@ body {
   padding: 0;
 }
 
+.house {
+  background-image: url("../img/icon-1.svg");
+	width: 75px;
+	height: 72px;
+}
+
+.food {
+  background-image: url("../img/icon-3.svg");
+	width: 74px;
+	height: 70px;
+}
+
+.gifts {
+  background-image: url("../img/icon-2.svg");
+	width: 64px;
+	height: 76px;
+}
+
 .services-list {
   display: flex;
   justify-content: space-between;
@@ -198,13 +216,24 @@ body {
   padding: 0;
 }
 
+.services-list li:first-child {
+  padding-top: 61px;
+}
+
+.services-list li:nth-child(2) {
+  padding-top: 61px;
+}
+
+.services-list li:last-child {
+  padding-top: 56px;
+}
+
 .service-item {
   display: flex;
   flex-basis: 33.33%;
   flex-direction: column;
-  justify-content: center;
   margin: 0;
-  padding: 56px 0 20px 0;
+  padding: 0 0 20px 0;
   min-height: 330px;
   box-sizing: border-box;
 }
@@ -299,7 +328,6 @@ body {
   margin: 0 auto;
   padding-top: 33px;
   width: 450px;
-  /*вот как тут распределить текст верно?*/
   line-height: 24px;
 }
 
@@ -310,7 +338,6 @@ body {
 }
 
 .search-form-wrapper {
-  /*кнопка почему-тов все равно выпадает из обертки :((( */
   display: block;
   position: relative;
   margin: 0 auto;
@@ -338,6 +365,7 @@ body {
   border: none;
   margin: 0;
   padding: 0;
+
 }
 
 .button {
@@ -376,27 +404,81 @@ body {
   background-color: #604e43;
 }
 
+.search-form-inside p {
+  margin: 0;
+  padding: 0;
+
+  text-align: left;
+}
+
+.search-form-inside p:not(:nth-child(2)) {
+  padding-top: 29px;
+}
+
+.arrival-item label {
+  padding-right: 21px;
+}
+
+.departure-item label {
+  padding-right: 17px;
+}
+/*Как сменить цвет автозаполнения?*/
 .date input {
+  box-sizing: border-box;
+  width: 345px;
+  padding: 6px 12px 6px;
+  padding-right: 9px;
+
+  font: inherit;
+  text-transform: uppercase;
+  color: #000;
+
   background-color: #f2f2f2;
+  border: none;
 }
 
 .date input:hover {
   background-color: #ebebeb;
 }
 
+/*вот тут почему-то не получается как в стилгайде сделать границу*/
 .date input:focus {
   background-color: #fff;
 }
 
+.guests {
+  display: flex;
+}
+
+.guests-item:last-child {
+  padding-top: 29px;
+}
+
+
+.guests-item input {
+  box-sizing: border-box;
+  width: 38px;
+  padding: 6px 15px 6px;
+
+  font: inherit;
+  text-transform: uppercase;
+  color: #000;
+
+  background-color: #f2f2f2;
+  border: none;
+}
+
 .search-button {
   width: 100%;
+  padding: 16px 20px;
+  margin-top: 54px;
+
   color: #fff;
   font-size: 21px;
   line-height: 26px;
 
   background-color: #81b3d2;
   border: none;
-  padding: 16px 20px;
 }
 
 .search-button:hover {
@@ -454,6 +536,42 @@ body {
 
 }
 
+.social {
+display: inline-block;
+width: 46px;
+height: 48px;
+margin-right: 6px;
+vertical-align: middle;
+
+background-color: #81b3d2;
+}
+
+.social:hover {
+  background-color: #669ec0;
+}
+
+.social:active {
+  background-color: #5496bd;
+}
+
+.social-fb {
+  background-image: url("../img/fb-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-twitter {
+  background-image: url("../img/twitter.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-youtube {
+  background-image: url("../img/youtube.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .footer-copyright {
   width: 33.33%;
   margin: 0;
@@ -461,6 +579,10 @@ body {
 }
 
 /*СТРАНИЧКА С ОТЕЛЯМИ*/
+
+.catalog-here a{
+  color: #766357;
+}
 
 .filters {
   display: flex;
@@ -497,6 +619,27 @@ body {
   width: 100%;
   flex-direction: row;
 }
+/*по поводу галочек в чекбоксах не очень понимаю*/
+.filter-checkbox {
+  position: relative;
+
+  padding-left: 39px;
+
+  cursor: pointer;
+}
+
+.filter-checkbox input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 17px;
+  height: 17px;
+
+  border: 2px solid #fff;
+  border-radius: 2px;
+}
+
 
 .filter fieldset {
   margin: 0;
@@ -510,6 +653,16 @@ body {
   width: 27.25%;
   padding: 0;
   margin: 0;
+
+  box-sizing: border-box;
+}
+
+.filter-inf ul {
+  padding-top: 26px;
+}
+
+.filter-inf li:not(:first-child) {
+  padding-top: 23px;
 }
 
 .filter-type {
@@ -518,34 +671,152 @@ body {
   margin: 0;
 }
 
+.filter-type ul {
+  padding-top: 26px;
+}
+
+.filter-type li:not(:first-child) {
+  padding-top: 23px;
+}
+
 .filter-option {
   text-align: left;
 }
-
+/* вот это надо как-то отпозиционировать. и мне кажется, размер неправильный +_+*/
 .price-range {
-  display: flex;
-  flex-direction: column;
-  width: 28.28%;
-  padding: 0;
+margin-bottom: 9px;
+
+font-weight: 600;
+font-size: 16px;
+line-height: 21px;
+}
+
+.price-range-title {
+  margin-bottom: 9px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+
+  height: 36px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
   margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #ababab;
+  border: 9px solid #ffffff;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
 }
 
 .show-button {
-  font-family: "PT Sans", Tahoma, sans-serif;
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
   font-size: 14px;
-  line-height: 21px;
-  color: #fff;
-  font-weight: normal;
+  line-height: 20px;
+  color: #ffffff;
   text-transform: uppercase;
 
-  background: none;
-  border: solid 2px #fff;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
 }
 
 .show-button:hover {
-  color: #333;
-  background-color: #fff;
-  border: solid 2px #fff;
+ color: #000000;
+
+ background: #ffffff;
 }
 
 
@@ -619,6 +890,10 @@ body {
   text-decoration: none;
 }
 
+.catalog-item-image {
+  padding-top: 5px;
+}
+
 .catalog:last-child {
   border-bottom: solid 1px #e5e5e5;
 }
@@ -626,19 +901,53 @@ body {
 .catalog-item {
   display: flex;
   min-height: 152px;
-  padding: 30px 6% 30px 6%;
+  padding: 26px 6% 24px 6%;
+  box-sizing: border-box;
 
   border-top: solid 1px #e5e5e5;
 }
 
-.catalog-item p {
-  margin: 0;
-  padding: 0;
+.catalog-text {
+  display: flex;
+  flex-direction: column;
 }
+.catalog-item-inside {
+  display: flex;
+
+  margin: 0;
+  padding: 6px 0 0 29px;
+}
+
+.catalog-item-price {
+  padding-left: 6px;
+}
+
+.catalog-item-type, .catalog-item-price {
+  display: flex;
+  flex-direction:  column;
+}
+
+.catalog-item-type span {
+padding: 0;
+padding-bottom: 14px;
+margin: 0;
+
+text-align: left;
+}
+
+.catalog-item-price span {
+  padding: 0;
+  padding-bottom: 14px;
+  margin: 0;
+
+  text-align: left;
+  }
 
 .catalog-name {
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 29px;
+
+  text-align: left;
 }
 
 .catalog-name a {
@@ -688,7 +997,35 @@ body {
   background-color: #503e33;
 }
 
+.stars-and-rating {
+  display: felx;
+  flex-direction: column;
+  margin-left: auto;
+}
+
+.stars {
+  margin: 0;
+  padding: 0;
+
+  text-align: right;
+}
+
+.star {
+  display: inline-block;
+	width: 18px;
+  height: 18px;
+  padding: 0;
+  padding-left: 6px;
+  padding-bottom: 48px;
+  margin: 0;
+
+  background-image: url("../img/star.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
 .rating {
+  padding: 5px 13px 5px 16px;
   color: #666;
 
   background-color: #f2f2f2;

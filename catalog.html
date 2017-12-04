@@ -20,7 +20,7 @@
             <li><a href="info.html">Информация</a></li>
             <li><a href="media.html">Фото и видео</a></li>
             <li><a href="map.html">Карта штата</a></li>
-            <li><a href="catalog.html">Гостиницы</a></li>
+            <li class="catalog-here"><a href="catalog.html">Гостиницы</a></li>
           </ul>
         </nav>
       </header>
@@ -35,16 +35,25 @@
               <legend>Инфраструктура:</legend>
               <ul>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" id="pool" type="checkbox" name="pool" checked>
-                  <label for="pool">Бассейн</label>
+                  <label class="filter-checkbox">
+                    <input class="visually-hidden filter-input filter-input-checkbox" id="pool" type="checkbox" name="pool" checked>
+                    <span class="checkbox-indicator"></span>
+                    Бассейн
+                  </label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" id="parking" type="checkbox" name="parking">
-                  <label for="parking">Парковка</label>
+                  <label class="filter-checkbox">
+                    <input class="visually-hidden filter-input filter-input-checkbox" id="parking" type="checkbox" name="parking">
+                    <span class="checkbox-indicator"></span>
+                    Парковка
+                  </label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" id="wi-fi" type="checkbox" name="wi-fi">
-                  <label for="wi-fi">wi-fi</label
+                  <label class="filter-checkbox">
+                    <input class="visually-hidden filter-input filter-input-checkbox" id="wi-fi" type="checkbox" name="wi-fi">
+                    <span class="checkbox-indicator"></span>
+                    wi-fi
+                  </label>
                 </li>
               </ul>
             </fieldset>
@@ -52,26 +61,44 @@
               <legend>Тип жилья:</legend>
               <ul>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" id="hotel" type="checkbox" name="hotel" checked>
-                  <label for="hotel">Гостиница</label>
+                  <label class="filter-checkbox">
+                    <input class="visually-hidden filter-input filter-input-checkbox" id="hotel" type="checkbox" name="hotel" checked>
+                    <span class="checkbox-indicator"></span>
+                    Гостиница
+                  </label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" id="motel" type="checkbox" name="motel" checked>
-                  <label for="motel">Мотель</label>
+                  <label class="filter-checkbox">
+                    <input class="visually-hidden filter-input filter-input-checkbox" id="motel" type="checkbox" name="motel" checked>
+                    <span class="checkbox-indicator"></span>
+                    Мотель
+                  </label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" id="apartments" type="checkbox" name="apartments" checked>
-                  <label for="apartments">Апартаменты</label>
+                  <label class="filter-checkbox">
+                    <input class="visually-hidden filter-input filter-input-checkbox" id="apartments" type="checkbox" name="apartments" checked>
+                    <span class="checkbox-indicator"></span>
+                    Апартаменты
+                  </label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="price-range">
-              <legend>Стоимость жилья в сутки (р):</legend>
-              <input type="text" name="low-price" value="от 0">
-              <input type="text" name="high-price" value="до 3000">
-              <input  id="price" type="range" name="price">
+              <div class="price-range-title">Стоимость в сутки (р):</div>
+              <div class="price-controls">
+                <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+              </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
               <button class="show-button" type="button">Показать</button>
             </fieldset>
+
           </form>
         </section>
 
@@ -109,62 +136,74 @@
               <div class="catalog-item-image">
                 <img src="img/amaro-photo.jpg" width="135" height="90" alt="Фото Amara resort & SPA">
               </div>
-              <h3 class="catalog-name"><a href="catalog-item.html">Amara resort & SPA</a></h3>
-              <p class="catalog-item-type">
-                <span>Гостиница</span>
-                <a class="button more-info" href="#">Подробнее</a>
-              </p>
-              <p class="catalog-item-price">
-                <span>От 3500 р.</span>
-                <a class="button booking" href="#">Забронировать</a>
-              <p>
+              <div class="catalog-text">
+                <h3 class="catalog-name"><a href="catalog-item.html">Amara resort & SPA</a></h3>
+                <div class="catalog-item-inside">
+                  <p class="catalog-item-type">
+                    <span>Гостиница</span>
+                    <a class="button more-info" href="#">Подробнее</a>
+                  </p>
+                  <p class="catalog-item-price">
+                    <span>От 3500 р.</span>
+                    <a class="button booking" href="#">Забронировать</a>
+                  <p>
+                </div>
+              </div>
               <div class="stars-and-rating">
                 <div class="stars">
-                  <span class="four-stars"></span>
+                  <span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span>
                 </div>
                 <span class="rating">Рейтинг: 8,5</span>
               </div>
             </li>
             <li class="catalog-item">
-                <div class="catalog-item-image">
-                  <img src="img/desert-photo.jpg" width="135" height="90" alt=" Фото Desert quali inn">
-                </div>
+              <div class="catalog-item-image">
+                <img src="img/desert-photo.jpg" width="135" height="90" alt=" Фото Desert quali inn">
+              </div>
+              <div class="catalog-text">
                 <h3 class="catalog-name"><a href="catalog-item.html">Desert quali inn</a></h3>
-                <p class="catalog-item-type">
-                  <span>Мотель</span>
-                  <a class="button more-info" href="#">Подробнее</a>
-                </p>
-                <p class="catalog-item-price">
-                  <span>От 2000 р.</span>
-                  <a class="button booking" href="#">Забронировать</a>
-                <p>
-                <div class="stars-and-rating">
-                  <div class="stars">
-                    <span class="two-stars"></span>
-                  </div>
-                  <span class="rating">Рейтинг: 8,9</span>
-                </div>
-              </li>
-              <li class="catalog-item">
-                  <div class="catalog-item-image">
-                    <img src="img/villa-photo.jpg" width="135" height="90" alt=" Фото Villas at poco diablo">
-                  </div>
-                  <h3 class="catalog-name"><a href="catalog-item.html">Villas at poco diablo</a></h3>
+                <div class="catalog-item-inside">
                   <p class="catalog-item-type">
-                    <span>Апартаменты</span>
-                    <a class="button more-info">Подробнее</a>
+                    <span>Мотель</span>
+                    <a class="button more-info" href="#">Подробнее</a>
                   </p>
                   <p class="catalog-item-price">
-                    <span>От 4000 р.</span>
+                    <span>От 2000 р.</span>
                     <a class="button booking" href="#">Забронировать</a>
                   <p>
-                  <div class="stars-and-rating">
-                    <div class="stars">
-                      <span class="three-stars"></span>
-                    </div>
-                    <span class="rating">Рейтинг: 9,2</span>
+                </div>
+              </div>
+              <div class="stars-and-rating">
+                <div class="stars">
+                  <span class="star"></span><span class="star"></span>
+                </div>
+                <span class="rating">Рейтинг: 8,9</span>
+              </div>
+              </li>
+              <li class="catalog-item">
+                <div class="catalog-item-image">
+                  <img src="img/villa-photo.jpg" width="135" height="90" alt=" Фото Villas at poco diablo">
+                </div>
+                <div class="catalog-text">
+                  <h3 class="catalog-name"><a href="catalog-item.html">Villas at poco diablo</a></h3>
+                  <div class="catalog-item-inside">
+                    <p class="catalog-item-type">
+                      <span>Апартаменты</span>
+                      <a class="button more-info">Подробнее</a>
+                    </p>
+                    <p class="catalog-item-price">
+                      <span>От 4000 р.</span>
+                      <a class="button booking" href="#">Забронировать</a>
+                    <p>
                   </div>
-                </li>
+                </div>
+                <div class="stars-and-rating">
+                  <div class="stars">
+                    <span class="star"></span><span class="star"></span><span class="star"></span>
+                  </div>
+                  <span class="rating">Рейтинг: 9,2</span>
+                </div>
+              </li>
           </ul>
         </section>
 
@@ -176,9 +215,9 @@
         </p>
         <div class="footer-social">
           <ul>
-            <li><a class="social-button" href="#">Твиттер</a></li>
-            <li><a class="social-button" href="#">Фейсбук</a></li>
-            <li><a class="social-button" href="#">Ютуб</a></li>
+            <li><a class="social social-twitter" href="#"></a></li>
+            <li><a class="social social-fb" href="#"></a></li>
+            <li><a class="social social-youtube" href="#"></a></li>
           </ul>
         </div>
           <p class="footer-copyright"> website by
