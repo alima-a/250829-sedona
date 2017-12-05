@@ -441,9 +441,35 @@ body {
   background-color: #ebebeb;
 }
 
-/*вот тут почему-то не получается как в стилгайде сделать границу*/
 .date input:focus {
   background-color: #fff;
+  outline-color: #e5e5e5;
+}
+
+.calendar {
+  fill: #d9d9d9;
+}
+
+.calendar:hover {
+  fill: #000;
+}
+
+.calendar:active {
+  fill: #81b3d2;
+}
+
+.calendar-arrival {
+  display: block;
+  left: 483px;
+  top: 63px;
+  position: absolute;
+}
+
+.calendar-departure {
+  display: block;
+  left: 483px;
+  top: 130px;
+  position: absolute;
 }
 
 .guests {
@@ -467,6 +493,16 @@ body {
   background-color: #f2f2f2;
   border: none;
 }
+
+.plus-button {
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
 
 .search-button {
   width: 100%;
@@ -499,7 +535,6 @@ body {
 .main-footer {
   display: flex;
   width: 100%;
-
   background-color: rgba(255,255,255,0.9);
 }
 
@@ -537,11 +572,13 @@ body {
 }
 
 .social {
-display: inline-block;
+display: flex;
+align-items: center;
+justify-content: center;
 width: 46px;
 height: 48px;
 margin-right: 6px;
-vertical-align: middle;
+fill: #fff;
 
 background-color: #81b3d2;
 }
@@ -552,30 +589,59 @@ background-color: #81b3d2;
 
 .social:active {
   background-color: #5496bd;
+  fill: rgba(255, 255, 255, 0.3);
 }
 
-.social-fb {
-  background-image: url("../img/fb-icon.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
+.social-icon-tw {
+  display: block;
+  width: 17px;
+  height: 15px;
+ }
 
-.social-twitter {
-  background-image: url("../img/twitter.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
+ .social-icon-fb {
+  display: block;
+  width: 12px;
+  height: 22px;
+ }
 
-.social-youtube {
-  background-image: url("../img/youtube.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+ .social-icon-ytb {
+  display: block;
+  width: 20px;
+  height: 16px;
+ }
+
+
+.footer-social ul {
+  margin: 0;
 }
 
 .footer-copyright {
+  display: flex;
+  justify-content: center;
+  padding-top: 39px;
   width: 33.33%;
   margin: 0;
-  align-self: center;
+}
+
+.footer-copyright a {
+  display: block;
+  height: 41px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-copyright a:hover {
+  fill: #81b3d2;
+}
+
+.footer-copyright a:active {
+  fill: rgba(0, 1, 1, 0.2);
+}
+
+.footer-copyright span {
+  margin: 0;
+  padding-right: 9px;
+  padding-top: 9px;
 }
 
 /*СТРАНИЧКА С ОТЕЛЯМИ*/
@@ -880,6 +946,32 @@ line-height: 21px;
   border-bottom:none;
 }
 
+.sorting ul {
+  display: flex;
+  position: relative;
+  margin-left: auto;
+}
+
+.arrow-up a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 5.5px 10px 5.5px;
+  border-color: transparent transparent #cacaca transparent;
+}
+
+.arrow-down a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 5.5px 0 5.5px;
+  border-color: #cacaca transparent transparent transparent;
+}
+
 .catalog ul {
   list-style-type: none;
   padding: 0;
@@ -1006,6 +1098,7 @@ text-align: left;
 .stars {
   margin: 0;
   padding: 0;
+  padding-bottom: 47px;
 
   text-align: right;
 }
@@ -1016,7 +1109,6 @@ text-align: left;
   height: 18px;
   padding: 0;
   padding-left: 6px;
-  padding-bottom: 48px;
   margin: 0;
 
   background-image: url("../img/star.svg");
