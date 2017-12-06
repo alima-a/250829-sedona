@@ -404,49 +404,74 @@ body {
   background-color: #604e43;
 }
 
-.search-form-inside p {
+.search-form {
+ position: absolute;
+ top: 100%;
+ left: 0;
+ right: 0;
+ padding: 55px;
+ background-color:  #fff;
+}
+
+.search-form-inside {
   margin: 0;
   padding: 0;
-
-  text-align: left;
-}
-
-.search-form-inside p:not(:nth-child(2)) {
-  padding-top: 29px;
-}
-
-.arrival-item label {
-  padding-right: 21px;
-}
-
-.departure-item label {
-  padding-right: 17px;
-}
-/*Как сменить цвет автозаполнения?*/
-.date input {
-  box-sizing: border-box;
-  width: 345px;
-  padding: 6px 12px 6px;
-  padding-right: 9px;
-
-  font: inherit;
-  text-transform: uppercase;
-  color: #000;
-
-  background-color: #f2f2f2;
   border: none;
 }
 
-.date input:hover {
-  background-color: #ebebeb;
+.form-row {
+  display: flex;
+  margin-bottom: 30px;
 }
 
-.date input:focus {
-  background-color: #fff;
-  outline-color: #e5e5e5;
+.form-inner {
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+}
+
+.field-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.form-field {
+  box-sizing: border-box;
+  display: block;
+  padding: 6px 40px 6px 12px;
+  width: 100%;
+
+  font: inherit;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000;
+
+  background-color: #f1f1f1;
+  border: none;
+}
+
+.field-label {
+  box-sizing: border-box;
+  padding: 6px 0;
+  min-width: 112px;
+  max-width: 112px;
+
+  font-size: 14px;
+  line-height: 26px;
+  text-align: left;
 }
 
 .calendar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  padding: 0;
+  width: 38px;
+  height: 38px;
+  background-color:  transparent;
+  border: none;
   fill: #d9d9d9;
 }
 
@@ -458,56 +483,91 @@ body {
   fill: #81b3d2;
 }
 
-.calendar-arrival {
-  display: block;
-  left: 483px;
-  top: 63px;
+
+.guests .field-wrapper {
+  width: 114px;
+}
+
+.guests .form-field {
+  padding-left: 40px;
+  padding-right: 40px;
+
+  text-align: center;
+}
+
+.field-label.nested {
+text-align: left;
+}
+
+.child {
+  padding-left: 53px;
+}
+
+.number {
   position: absolute;
-}
-
-.calendar-departure {
+  top: 0;
   display: block;
-  left: 483px;
-  top: 130px;
-  position: absolute;
-}
-
-.guests {
-  display: flex;
-}
-
-.guests-item:last-child {
-  padding-top: 29px;
-}
-
-
-.guests-item input {
-  box-sizing: border-box;
-  width: 38px;
-  padding: 6px 15px 6px;
-
-  font: inherit;
-  text-transform: uppercase;
-  color: #000;
-
-  background-color: #f2f2f2;
-  border: none;
-}
-
-.plus-button {
+  padding: 0;
   width: 38px;
   height: 38px;
+  background-color: transparent;
   border: none;
-  border-radius: 0;
-  padding: 0;
-  background-color: #f2f2f2;
 }
 
+.number-minus {
+  left: 0;
+}
+
+.number-plus {
+  right: 0;
+}
+
+.number-plus::before,
+.number-plus::after {
+  content: "";
+  display: block;
+
+  position: absolute;
+  margin-left: 13.5px;
+
+  width: 11px;
+  height: 3px;
+
+  background-color: #a9a9a9;
+}
+
+.number-plus::before {
+  transform: rotate(90deg);
+}
+
+.number-plus:hover:before,
+.number-plus:hover:after,
+.number-minus:hover:before  {
+  background-color: #000;
+}
+
+.number-plus:active:before,
+.number-plus:active:after,
+.number-minus:active:before {
+  background-color: #81b3d2;
+}
+
+.number-minus::before {
+  content: "";
+  display: block;
+
+  position: absolute;
+  margin-left: 13.5px;
+
+  width: 11px;
+  height: 3px;
+
+  background-color: #a9a9a9;
+}
 
 .search-button {
   width: 100%;
   padding: 16px 20px;
-  margin-top: 54px;
 
   color: #fff;
   font-size: 21px;
@@ -685,7 +745,7 @@ background-color: #81b3d2;
   width: 100%;
   flex-direction: row;
 }
-/*по поводу галочек в чекбоксах не очень понимаю*/
+
 .filter-checkbox {
   position: relative;
 
@@ -698,12 +758,17 @@ background-color: #81b3d2;
   position: absolute;
   top: 0;
   left: 0;
+  width: 27px;
+  height: 23px;
 
-  width: 17px;
-  height: 17px;
+  background-color: transparent;
+  background-image: url(../img/checkbox-off.svg);
+  background-position: top left;
+  background-repeat: no-repeat;
+}
 
-  border: 2px solid #fff;
-  border-radius: 2px;
+.filter-checkbox .input[type="checkbox"]:checked + .checkbox-indicator {
+  background-image: url(../img/checkbox-on.svg);
 }
 
 
@@ -767,9 +832,9 @@ line-height: 21px;
 
 .price-controls {
   position: relative;
-
   height: 36px;
   margin-bottom: 20px;
+  min-width: 318px;
 
   font-size: 0;
 
@@ -800,10 +865,14 @@ line-height: 21px;
   cursor: pointer;
 }
 
-.price-controls .min-price,
-.price-controls .max-price {
+.price-controls .min-price {
   width: 90px;
   padding-left: 65px;
+}
+
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 62px;
 }
 
 .price-controls input {
@@ -946,15 +1015,38 @@ line-height: 21px;
   border-bottom:none;
 }
 
+.sorting-link:focus {
+  color: #81b3d2;
+  text-decoration: none;
+
+  border-bottom:none;
+}
+
 .sorting ul {
   display: flex;
   position: relative;
   margin-left: auto;
 }
 
+.sort li {
+  margin-left: 12px;
+  width: 11px;
+  height: 10px;
+}
+
+.sort a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .arrow-up a::after {
   content: "";
   position: absolute;
+  top: 0;
+  left: 50%;
+  transform:  translateX(-50%);
   width: 0;
   height: 0;
   border-style: solid;
@@ -962,14 +1054,41 @@ line-height: 21px;
   border-color: transparent transparent #cacaca transparent;
 }
 
+.arrow-up a:hover:after {
+  border-color: transparent transparent #231f20 transparent;
+}
+
+.arrow-up a:active:after {
+  border-color: transparent transparent #81b3d2 transparent;
+}
+
+.arrow-up a:focus:after {
+  border-color: transparent transparent #81b3d2 transparent;
+}
+
 .arrow-down a::after {
   content: "";
   position: absolute;
+  top: 0;
+  left: 50%;
+  transform:  translateX(-50%);
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 10px 5.5px 0 5.5px;
   border-color: #cacaca transparent transparent transparent;
+}
+
+.arrow-down a:hover:after {
+  border-color: #231f20 transparent transparent transparent;
+}
+
+.arrow-down a:active:after {
+  border-color: #81b3d2 transparent transparent transparent;
+}
+
+.arrow-down a:focus:after {
+  border-color: #81b3d2 transparent transparent transparent;
 }
 
 .catalog ul {
