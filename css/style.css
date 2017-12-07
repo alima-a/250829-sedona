@@ -575,6 +575,7 @@ text-align: left;
 
   background-color: #81b3d2;
   border: none;
+  border-radius: 0;
 }
 
 .search-button:hover {
@@ -767,7 +768,7 @@ background-color: #81b3d2;
   background-repeat: no-repeat;
 }
 
-.filter-checkbox .input[type="checkbox"]:checked + .checkbox-indicator {
+.filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator {
   background-image: url(../img/checkbox-on.svg);
 }
 
