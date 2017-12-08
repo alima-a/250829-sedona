@@ -68,7 +68,7 @@ body {
   text-align: center;
   padding: 0;
   margin: 0;
-	padding-top: 15px;
+	padding-top: 21px;
 }
 
 .site-navigation a{
@@ -166,7 +166,7 @@ body {
 
 .place-text {
   margin: 0;
-  padding: 44px 0 0;
+  padding: 47px 0 0;
   width: 33.33%;
 }
 
@@ -179,13 +179,13 @@ body {
   max-width: 200px;
   padding-bottom: 17px;
 
-  font-size: 21px;
+  font-size: 24px;
   font-weight: bold;
 }
 
 .place-text p {
   margin: 0 auto;
-  padding: 27px 15px 27px 15px;
+  padding: 21px 15px 27px 15px;
   max-width: 300px;
 }
 
@@ -234,11 +234,11 @@ body {
 }
 
 .services-list li:nth-child(2) {
-  padding-top: 61px;
+  padding-top: 63px;
 }
 
 .services-list li:last-child {
-  padding-top: 56px;
+  padding-top: 57px;
 }
 
 .service-item {
@@ -303,6 +303,7 @@ body {
 .advantages h3 {
   margin:0 auto;
   padding: 47px 0 26px;
+  max-width: 150px;
 
   font-size: 21px;
   font-weight: bold;
@@ -330,7 +331,7 @@ body {
 
 .search-text h3 {
   margin: 0 auto;
-  padding-top: 55px;
+  padding-top: 50px;
 
   font-size: 30px;
   line-height: 36px;
@@ -339,7 +340,7 @@ body {
 
 .search-text p {
   margin: 0 auto;
-  padding-top: 33px;
+  padding-top: 24px;
   width: 450px;
   line-height: 24px;
 }
@@ -347,7 +348,7 @@ body {
 .search-text {
   display: flex;
   flex-direction: column;
-  margin-bottom: 50px;
+  margin-bottom: 48px;
 }
 
 .search-form-wrapper {
@@ -406,7 +407,7 @@ body {
   text-decoration: none;
 
   background-color: #766357;
-  padding: 35px 20px 35px 20px;
+  padding: 29px 20px 30px 20px;
 }
 
 .search-hotel:hover {
@@ -434,12 +435,15 @@ body {
 
 .form-row {
   display: flex;
-  margin-bottom: 30px;
+}
+
+.search-form-inside div:last-child {
+  margin-bottom: 26px;
 }
 
 .form-inner {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   width: 50%;
 }
 
