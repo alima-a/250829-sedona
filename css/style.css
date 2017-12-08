@@ -65,7 +65,13 @@ body {
 .site-navigation li {
 	width: 20%;
 	height: 50px;
+	text-align: center;
 	padding-top: 15px;
+}
+
+.site-navigation a{
+  padding: 15px 0;
+  box-sizing: border-box;
 }
 
 .site-navigation li:nth-child(1),
@@ -78,10 +84,16 @@ body {
   text-align: right;
 }
 
+.site-navigation li:nth-child(1) {
+  padding-left: 6%;
+}
 
-.site-navigation a{
-  padding: 15px 0;
-  box-sizing: border-box;
+.site-navigation li:nth-child(2) {
+  padding-right: 6%;
+}
+
+.site-navigation li:nth-child(3) {
+  margin-left: auto;
 }
 
 .main-header a {
