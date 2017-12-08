@@ -65,7 +65,9 @@ body {
 .site-navigation li {
 	width: 20%;
 	height: 50px;
-	text-align: center;
+  text-align: center;
+  padding: 0;
+  margin: 0;
 	padding-top: 15px;
 }
 
@@ -88,7 +90,7 @@ body {
   padding-left: 6%;
 }
 
-.site-navigation li:nth-child(2) {
+.site-navigation li:nth-child(4) {
   padding-right: 6%;
 }
 
