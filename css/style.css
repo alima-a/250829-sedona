@@ -177,9 +177,9 @@ body {
 
 .place h3 {
   max-width: 200px;
-  padding-bottom: 17px;
+  padding-bottom: 22px;
 
-  font-size: 24px;
+  font-size: 21px;
   font-weight: bold;
 }
 
@@ -198,6 +198,7 @@ body {
 
   background: url("../img/sedona-photo.jpg") no-repeat #a96b60;
   background-size: cover;
+  background-position: center;
 }
 
 .services {
@@ -277,11 +278,16 @@ body {
   margin: 0;
 }
 
+.bridge-text p {
+  max-width: 310px;
+}
+
 .bridge-img {
   width: 66.66%;
 
   background: url("../img/bridge-photo.jpg") no-repeat #a96b60;
   background-size: cover;
+  background-position: center;
 }
 
 .advantages {
@@ -302,7 +308,7 @@ body {
 
 .advantages h3 {
   margin:0 auto;
-  padding: 47px 0 26px;
+  padding: 47px 0 25px;
   max-width: 150px;
 
   font-size: 21px;
@@ -311,7 +317,7 @@ body {
 
 .advantages p {
   margin: 0 auto;
-  padding: 25px 0 20px;
+  padding: 23px 0 20px;
   width: 270px;
 }
 
@@ -435,10 +441,11 @@ body {
 
 .form-row {
   display: flex;
+  padding-bottom: 29.5px;
 }
 
-.search-form-inside div:last-child {
-  margin-bottom: 26px;
+.form-row-guests {
+  padding-bottom: 54px;
 }
 
 .form-inner {
@@ -621,14 +628,18 @@ text-align: left;
   bottom: 0;
 }
 
+.footer-item {
+  width: 33.33%;
+  margin: 0;
+  padding: 0;
+}
+
 .main-footer ul {
   display: flex;
   list-style-type: none;
 }
 
 .hashtag {
-  width: 33.33%;
-  margin: 0;
   align-self: center;
 }
 
@@ -643,10 +654,12 @@ text-align: left;
 .footer-social {
   display: flex;
   justify-content: center;
-  width: 33.33%;
-  margin: 0;
   padding: 36px 0;
+}
 
+.footer-social ul {
+  padding: 0;
+  margin: 0;
 }
 
 .social {
@@ -697,9 +710,7 @@ background-color: #81b3d2;
   display: flex;
   justify-content: center;
   padding-top: 39px;
-  width: 33.33%;
-  margin: 0;
-}
+ }
 
 .footer-copyright a {
   display: block;
