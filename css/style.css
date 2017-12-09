@@ -669,7 +669,8 @@ align-items: center;
 justify-content: center;
 width: 46px;
 height: 48px;
-margin-right: 6px;
+margin-right: 3px;
+margin-left: 3px;
 fill: #fff;
 
 background-color: #81b3d2;
@@ -743,7 +744,7 @@ background-color: #81b3d2;
 .filters {
   display: flex;
   min-height: 217px;
-  padding: 28px 6.0833% 5px 6.0833%;
+  padding: 28px 6% 5px 6%;
   margin: 0;
   box-sizing: border-box;
 
@@ -803,41 +804,25 @@ background-color: #81b3d2;
 
 
 .filter fieldset {
-  margin: 0;
   padding: 0;
   border: none;
 
   text-align: left;
 }
 
-.filter-inf {
+.filter-col {
   width: 27.25%;
-  padding: 0;
-  margin: 0;
+   margin: 0;
 
   box-sizing: border-box;
 }
 
-.filter-inf ul {
+.filter-col ul {
   padding-top: 23px;
 }
 
-.filter-inf li:not(:first-child) {
+.filter-col li:not(:first-child) {
   padding-top: 24.5px;
-}
-
-.filter-type {
-  width: 40.333%;
-  padding: 0;
-  margin: 0;
-}
-
-.filter-type ul {
-  padding-top: 26px;
-}
-
-.filter-type li:not(:first-child) {
-  padding-top: 23px;
 }
 
 .filter-option {
@@ -846,6 +831,7 @@ background-color: #81b3d2;
 
 .price-range {
 margin-bottom: 9px;
+margin-left: auto;
 
 font-weight: 600;
 font-size: 16px;
@@ -887,9 +873,10 @@ line-height: 21px;
 
 .price-controls label {
   display: inline-block;
+  padding-top: 5px;
 
   font-size: 14px;
-  line-height: 38px;
+  line-height: 21px;
   vertical-align: top;
 
   cursor: pointer;
@@ -988,7 +975,6 @@ line-height: 21px;
 .sorting {
   display: flex;
   min-height: 86px;
-  align-items: center;
   padding: 0 6% 0 6%;
   margin: 0;
 
@@ -1006,18 +992,12 @@ line-height: 21px;
 
 .sorting-type {
   display: flex;
+  align-items: center;
 }
 
 .sorting-type p{
   padding-left: 47px;
-  padding-top: 36px;
-}
-
-.sorting-type ul {
-  display: flex;
-  padding: 0;
-  margin: 0;
-}
+  }
 
 .sorting-type li {
   padding-left: 35px;
@@ -1055,6 +1035,7 @@ line-height: 21px;
   padding: 0;
   margin: 0;
   margin-left: auto;
+  align-items: center;
 
   list-style-type: none;
 }
@@ -1136,14 +1117,19 @@ line-height: 21px;
   padding-top: 5px;
 }
 
+.catalog-item-image {
+  display: block;
+  border-style: none;
+}
+
+
 .catalog:last-child {
   border-bottom: solid 1px #e5e5e5;
 }
 
 .catalog-item {
   display: flex;
-  height: 150px;
-  padding: 26px 6% 24px 6%;
+  padding: 26px 6% 23px 6%;
   box-sizing: border-box;
 
   border-top: solid 1px #e5e5e5;
