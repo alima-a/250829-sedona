@@ -1002,8 +1002,16 @@ background-color: #81b3d2;
   padding-left: 47px;
   }
 
-.sorting-type li {
-  padding-left: 35px;
+.sorting-type li:first-child {
+  padding-left: 37px;
+}
+
+.sorting-type li:nth-child(2) {
+  padding-left: 33px;
+}
+
+.sorting-type li:nth-child(3) {
+  padding-left: 34px;
 }
 
 .sorting-link {
