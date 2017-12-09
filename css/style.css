@@ -593,6 +593,7 @@ text-align: left;
   width: 100%;
   padding: 16px 20px;
 
+  font-family: "PT Sans", Tahoma, sans-serif;
   color: #fff;
   font-size: 21px;
   line-height: 26px;
@@ -811,7 +812,7 @@ background-color: #81b3d2;
 }
 
 .filter-col {
-  width: 27.25%;
+  width: 24.03%;
    margin: 0;
 
   box-sizing: border-box;
@@ -830,12 +831,13 @@ background-color: #81b3d2;
 }
 
 .price-range {
-margin-bottom: 9px;
-margin-left: auto;
+  margin: 0;
+  margin-bottom: 9px;
+  margin-left: auto;
 
-font-weight: 600;
-font-size: 16px;
-line-height: 21px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
 }
 
 .price-range-title {
@@ -850,7 +852,7 @@ line-height: 21px;
   position: relative;
   height: 32px;
   margin-bottom: 20px;
-  min-width: 318px;
+  min-width: 313px;
 
   font-size: 0;
 
@@ -889,7 +891,7 @@ line-height: 21px;
 
 .price-controls .max-price {
   width: 90px;
-  padding-left: 62px;
+  padding-left: 58px;
 }
 
 .price-controls input {
@@ -951,9 +953,10 @@ line-height: 21px;
 
 .show-button {
   display: block;
-  margin: 0 auto;
+  margin: auto 27%;
   padding: 6px 35px;
 
+  font-family: "PT Sans", Tahoma, sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
