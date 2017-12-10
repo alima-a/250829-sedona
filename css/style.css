@@ -681,25 +681,6 @@ body {
   fill: rgba(255, 255, 255, 0.3);
 }
 
-.social-icon-tw {
-  display: block;
-  width: 17px;
-  height: 15px;
- }
-
- .social-icon-fb {
-  display: block;
-  width: 12px;
-  height: 22px;
- }
-
- .social-icon-ytb {
-  display: block;
-  width: 20px;
-  height: 16px;
- }
-
-
 .footer-social ul {
   margin: 0;
 }
@@ -1246,6 +1227,7 @@ body {
 
 .star {
   display: inline-block;
+  vertical-align: middle;
 	width: 18px;
   height: 18px;
   padding: 0;
