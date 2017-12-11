@@ -470,6 +470,10 @@ body {
   border: none;
 }
 
+.form-field:hover {
+
+}
+
 .field-label {
   box-sizing: border-box;
   padding: 6px 0;
@@ -760,8 +764,8 @@ body {
 
   cursor: pointer;
 }
-
-.filter-checkbox input[type="checkbox"] + .checkbox-indicator {
+/*Не получается сделать чекбоксы видьмыми*/
+.filter-option input[type="checkbox"] + label:before {
   position: absolute;
   top: 0;
   left: 0;
@@ -774,7 +778,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator {
+.filter-option input[type="checkbox"]:checked {
   background-image: url(../img/checkbox-on.svg);
 }
 
