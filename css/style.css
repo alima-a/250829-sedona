@@ -56,6 +56,7 @@ body {
 
 .site-navigation {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   height: 56px;
@@ -97,6 +98,10 @@ body {
 
 .site-navigation li:nth-child(3) {
   margin-left: auto;
+}
+
+li:nth-child(4n +1) {
+  padding-left:auto;
 }
 
 .main-header a {
@@ -471,7 +476,15 @@ body {
 }
 
 .form-field:hover {
+  background-color: #ebebeb;
+}
 
+.form-field:focus {
+  outline: none;
+
+  background-color: #fff;
+  padding: 4px 38px 4px 10px;
+  border: solid 2px #e5e5e5;
 }
 
 .field-label {
@@ -549,7 +562,7 @@ body {
 .number-plus::after {
   content: "";
   display: block;
-
+  top: 18px;
   position: absolute;
   margin-left: 13.5px;
 
@@ -578,7 +591,7 @@ body {
 .number-minus::before {
   content: "";
   display: block;
-
+  top: 18px;
   position: absolute;
   margin-left: 13.5px;
 
@@ -656,6 +669,8 @@ body {
   display: flex;
   justify-content: center;
   padding: 36px 0;
+  flex-wrap: wrap;
+  max-wid th: 33%;
 }
 
 .footer-social ul {
@@ -764,8 +779,9 @@ body {
 
   cursor: pointer;
 }
-/*Не получается сделать чекбоксы видьмыми*/
+
 .filter-option input[type="checkbox"] + label:before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -777,9 +793,19 @@ body {
   background-position: top left;
   background-repeat: no-repeat;
 }
+.filter-option input[type="checkbox"]:disabled + label:before {
+  opacity: 0.3;
+}
 
-.filter-option input[type="checkbox"]:checked {
+
+.filter-option input[type="checkbox"]:checked + label:before {
+  content: "";
+
   background-image: url(../img/checkbox-on.svg);
+}
+
+.filter-option input[type="checkbox"]:checked:disabled + label:before {
+  opacity: 0.3;
 }
 
 
