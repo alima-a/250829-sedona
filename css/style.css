@@ -436,7 +436,7 @@ body {
   display: block;
 }
 
-.search-form .opened {
+.search-form.opened {
   display:block;
 }
 
