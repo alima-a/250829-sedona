@@ -395,7 +395,26 @@ body {
   background-color: #fff;
 }
 
-.search-form {
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+ .search-form {
+  display: block;
   position: absolute;
   top: 100%;
   left: 0;
@@ -409,6 +428,12 @@ body {
   font-weight: bold;
 
   background-color: #fff;
+
+  animation: bounce 0.6s;
+}
+
+.nojs {
+  display: none;
 }
 
 .search-form fieldset {
